@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".PostJournalActivity">
+
+    <ImageView
+        android:id="@+id/postImageView"
+        android:layout_width="394dp"
+        android:layout_height="269dp"
+        android:src="@drawable/image_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/tvPostUsername"
+        android:layout_width="111dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPostCamera" />
+
+    <TextView
+        android:id="@+id/tvPostDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostUsername" />
+
+    <ImageView
+        android:id="@+id/btnPostCamera"
+        android:layout_width="103dp"
+        android:layout_height="92dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/postImageView"
+        app:layout_constraintEnd_toEndOf="@+id/postImageView"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etPostTitle"
+        android:layout_width="385dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="@string/postTitle"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postImageView" />
+
+    <EditText
+        android:id="@+id/etPostThoughts"
+        android:layout_width="373dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="@string/postThoughts"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPostTitle" />
+
+    <ProgressBar
+        android:id="@+id/postProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPostThoughts" />
+
+    <Button
+        android:id="@+id/btnPostSaveJournal"
+        android:layout_width="381dp"
+        android:layout_height="57dp"
+        android:background="@android:color/transparent"
+        android:text="Save"
+        android:textColor="@color/yellowBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPostThoughts"
+        app:layout_constraintVertical_bias="0.972" />
+</androidx.constraintlayout.widget.ConstraintLayout>

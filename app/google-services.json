@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698885864222",
+    "project_id": "self-journal-f56f1",
+    "storage_bucket": "self-journal-f56f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698885864222:android:bf17d4c89dbd5fee83670f",
+        "android_client_info": {
+          "package_name": "com.example.selfjournal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu3AdsR3j2cjIII5DUzq1Eopie6VtnTik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

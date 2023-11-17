@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CreateAccount">
+
+    <ProgressBar
+        android:id="@+id/acc_progresslogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/acc_loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/etEmailAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_id"
+            android:layout_marginTop="16dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etPasswordAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btnCreateAcc"
+            android:text="@string/createAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellowBg"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
